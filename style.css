@@ -9,16 +9,89 @@ body {
     background-color: #008000;
 }
 
+hr {
+    height: 2px;
+    border: none;
+    width: 100%;
+    background-color: yellow;
+}
+
+.audio {
+    margin: 0 auto;
+    display: block;
+}
+
+.rtx-info {
+    text-align: center;
+    margin : 20px auto 20px auto;
+    width: 980px;
+    font-size: 28px;
+}
+
+.specifications {
+    width: 980px;
+    margin: 30px auto 30px auto;
+    font-size: 28px;
+    text-align: center;
+}
+
+.geforce-20-info {
+    font-size: 24px;
+    text-align: center;
+    width: 980px;
+    margin: 0 auto 30px auto;
+}
+
+.video {
+    margin: 0 auto;
+    display: block;
+}
+
 ul {
     list-style-type: none;
+}
+
+.our-cards {
+    font-size: 28px;
+    text-align: center;
+}
+
+.nvidia-videocards {
+    text-align: center;
+    font-size: 48px;
+}
+
+.videocard-item {
+    display: flex;
+    width: 980px;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+
+.videocard-info {
+    margin-right: 40px;
+    font-size: 32px;
+}
+
+.videocard-image {
+    width: 400px;
 }
 
 table {
     margin: 0 auto;
     border: 2px solid black;
+    width: 400px;
+}
+
+.first-table {
+    margin: 0 auto 50px auto;
 }
 
 td {
     text-align: center;
     border: 1px solid black;
+}
+marquee {
+    font-size: 32px;
+    background-color: #FF8C00;
 }
