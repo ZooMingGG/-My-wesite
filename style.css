@@ -95,3 +95,25 @@ marquee {
     font-size: 32px;
     background-color: #FF8C00;
 }
+
+input {
+    display: block;
+    margin: 30px auto;
+    height: 30px;
+    width: 300px;
+    padding-left: 20px;
+    outline: none;
+}
+
+input[type = "submit"] {
+    width: 200px;
+    background-color: #000000;
+    transition: background-color 0.2s linear, color 0.2s linear;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+ input[type = "submit"]:hover {
+    background-color: #FFFFFF;
+    color: black
+ }
