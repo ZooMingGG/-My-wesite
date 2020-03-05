@@ -3,6 +3,19 @@
     font-family: 'Montserrat';
 }
 
+.red {
+    color: red;
+}
+
+.plus {
+    margin-left: 45%;
+}
+
+.out {
+    font-size: 500px;
+    text-align: center;
+}
+
 body {
     margin: 0;
     padding: 0;
