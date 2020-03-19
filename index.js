@@ -46,3 +46,43 @@ minus.addEventListener('click', () => {
    out.innerHTML = --x;
 })
 
+document.body.insertAdjacentHTML('beforeend', '<div id="digital-clock"><span class="hours"></span>:<span class="minuts"></span>:<span class="seconds"></span></div>');
+
+function clock() {
+    let digitalClock = document.querySelector('#digital-clock');
+    let hoursSpan = document.querySelector('.hours');
+    let minutesSpan = document.querySelector('.minuts');
+    let secondsSpan = document.querySelector('.seconds');
+
+    digitalClock.style.background = 'orange';
+    hoursSpan.style.color = 'yellow';
+    minutesSpan.style.color = 'yellow';
+    secondsSpan.style.color = 'yellow';
+
+    setInterval( () => {
+        let date = new Date();
+        let hrs = date.getHours();
+        let mnts = date.getMinutes();
+        let sec = date.getSeconds();
+
+        if (hrs <= 9) {
+            hoursSpan.innerHTML = '0' + date.getHours();
+        } else {
+            hoursSpan.innerHTML = date.getHours();
+        }
+
+        if (mnts <= 9) {
+            minutesSpan.innerHTML = '0' + date.getMinutes();
+        } else {
+            minutesSpan.innerHTML = date.getMinutes();
+        }
+
+        if (sec <= 9) {
+            secondsSpan.innerHTML = '0' + date.getSeconds();
+        } else {
+            secondsSpan.innerHTML = date.getSeconds();
+        }
+    },1000);
+}
+
+clock();
