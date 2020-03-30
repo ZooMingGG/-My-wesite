@@ -73,11 +73,18 @@ hr {
     display: block;
 }
 
-.rtx-info {
-    text-align: center;
-    margin : 20px auto 20px auto;
-    width: 980px;
-    font-size: 28px;
+
+
+.wrapper-rtx-info {
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+    font-size: 16px;
+}
+
+.cyberpunk-rtx {
+    width: 450px;
 }
 
 .specifications {
@@ -87,11 +94,17 @@ hr {
     text-align: center;
 }
 
-.geforce-20-info {
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
     font-size: 24px;
     text-align: center;
     width: 980px;
     margin: 0 auto 30px auto;
+}
+.rtx-img {
+    width: 400px;
 }
 
 .video {
